@@ -1,0 +1,50 @@
+:root {
+  --main-color: #717482;
+  --second-color: #767A89;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+.page {
+  flex: 1 1 auto;
+  margin-top: 90px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+      margin-top: 90px;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5px;
+
+  @media (min-width: 576px) {
+      padding: 15px;
+  }
+
+  @media (min-width: 990px) {
+      padding: 5px;
+  }
+}

@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable */
+
+import "./App.scss";
+import { Routes, Route } from "react-router-dom";
+import { useState } from "react";
+import data from "./products";
+import Layout from "./components/layout/Layout";
+import Detail from "./routes/Detail";
+import Home from "./routes/Home";
+import Cart from "./routes/Cart/Cart";
 
 function App() {
+  const [products, setproducts] = useState(data);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          <Route path="/" element={<Home products={products} />} />
+          <Route path="/detail/:id" element={<Detail products={products} />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="*" element={<div>없는 페이지입니다.</div>} />`
+        </Route>
+      </Routes>
     </div>
   );
 }

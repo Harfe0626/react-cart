@@ -1,0 +1,45 @@
+.row {
+    margin-left: auto;
+    margin-right: auto;
+}
+h2 {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    text-align: left;
+}
+.title {
+    display:block;
+    color:#000;
+    font-size:17px;
+    font-weight:400;
+    overflow:hidden;
+}
+.content {
+    display:block;
+    margin-top:5px;
+    color:#888;
+    font-size:14px;
+    overflow:hidden;
+}
+.rate {
+    vertical-align: top;
+    margin: 0 6px 0 10px;
+    font-size: 16px;
+    line-height: 2;
+    color: #ff6500;
+}
+.rateCost {
+    color: #000;
+    font-size: 24px;
+    line-height: 1;
+}
+.sellCost {
+    margin-left: 10px;
+    color: #666;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    text-decoration: line-through;
+}

@@ -1,0 +1,39 @@
+.cartBoard {
+    margin-left:auto; 
+    margin-right:auto;
+}
+.tblForm {
+    border-collapse: separate;
+    border-top: 1px solid #000;
+    width: 90%;
+    border-collapse: collapse;
+    empty-cells: show;
+    border-spacing: 0;
+    margin-left:auto; 
+    margin-right:auto;
+}
+.tdTotal {
+    padding: 22px 20px;
+    color: #000;
+    text-align: center;
+    border-bottom: 0;
+    background: #fafafa;
+}
+.txt {
+    margin-right: 10px;
+}
+.txt2 {
+    color: #888;
+}
+.totalCost {
+    font-size: 20px;
+}
+.symbol {
+    position: relative;
+    display: inline-block;
+    font-size: 30px;
+    color: #888;
+    width: 90px;
+    margin-top: -7px;
+    vertical-align: middle;
+}
